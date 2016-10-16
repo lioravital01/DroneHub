@@ -9,57 +9,15 @@
   </head>
 
   <body>
-        <section class="hero is-success is-fullheight">
-          <!-- Hero header: will stick at the top -->
-          <div class="hero-head">
-            <header class="nav">
-              <div class="container">
-                <div class="nav-left">
-                  <a class="nav-item">
-                    <img src="images/bulma-type-white.png" alt="Logo">
-                  </a>
-                </div>
-                <span class="nav-toggle">
-                  <span></span>
-                  <span></span>
-                  <span></span>
-                </span>
-                <div class="nav-right nav-menu">
-                  <a
-                    <%= link_to 'Home', root_path, class:"nav-item" %>
-                  </a>
-                  <a
-                    <%= link_to 'About', about_path, class:"nav-item" %>
-                  </a>
-                  <a class="nav-item">
-                    Contact
-                  </a>
-                  <span class="nav-item">
-                    <a class="button is-success is-inverted">
-                      <span>Sign Up</span>
-                    </a>
-                  </span>
-                </div>
-              </div>
-            </header>
-          </div>
 
-          <!-- Hero content: will be in the middle -->
-          <div class="hero-body">
-            <div class="container has-text-centered">
-              <h1 class="title">
-                Welcome to Dronehub.
-              </h1>
-              <h2 class="subtitle">
-                Your one-stop shop for the web's best drone footage.
-              </h1>
-            </div>
-          </div>
+    <!-- Renders the navbar partial i created -->
+    <%= render partial: "partials/navbar" %>
 
-          </section>
-
-
-
+  <div class= "container">
     <%= yield %>
+  </div>
+
+
+
   </body>
 </html>
